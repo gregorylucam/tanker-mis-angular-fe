@@ -1,1 +1,2 @@
-# tanker-mis-angular-fe
+# tanker-mis
+tanker management information system
