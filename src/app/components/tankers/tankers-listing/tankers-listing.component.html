@@ -1,0 +1,39 @@
+<div class="tankers-listing-screen">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+          <div class="heading">
+              <h2>
+                Tankers
+                <a class="c-btn pink" routerLink="/tankers/tankers-add-edit">Add Tanker</a>
+              </h2>
+          </div>
+      </div>
+    </div>
+    <div class="row pt-5 justify-content-center">
+      <div class="col-12">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">No.</th>
+              <th scope="col">Tanker No. Plate</th>
+              <th scope="col">Tanker Name/Type</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of table">
+              <td>{{item.id}}</td>
+              <td>{{item.noPlate}}</td>
+              <td>{{item.nameType}}</td>
+              <td>
+                <i class="fa-solid fa-pen-clip text-pinkgradient" routerLink="/tankers/tankers-add-edit"></i>
+                <i class="fa-solid fa-trash-can text-pinkgradient"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
